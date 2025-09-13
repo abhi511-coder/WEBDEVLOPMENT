@@ -1,0 +1,44 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #8b47a0, #6950a0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(49, 10, 110, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.skill-card {
+  background: rgba(56, 17, 7, 0.2);
+  padding: 12px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: bold;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  background: rgba(176, 2, 2, 0.3);
+}
